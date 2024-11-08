@@ -4,7 +4,8 @@
 <template>
   <div class="banner">
     <div class="banner-text">
-      <h1 class="display-text">{{ name.first }} {{ name.last }}</h1>
+      <h1 class="first-name">{{ name.first }}</h1>
+      <h1 class="last-name">{{ name.last }}</h1>
       <h2 id="typewriter"></h2>
     </div>
   </div>
@@ -35,4 +36,42 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+
+.first-name {
+  font-size: 5rem;
+  font-weight: 400;
+  background: linear-gradient(-45deg, #f5ba19, #f12711, #f5ba19); /* Gradient applied to text */
+  -webkit-background-clip: text; /* Ensures background clip is applied to text */
+  color: transparent; /* Make the text color transparent to show the gradient */
+  margin-top: 360px;
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.7); /* Text shadow for first name */
+
+
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.last-name {
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 0.5rem;
+  text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.7); /* Text shadow for first name */
+
+}
+
+</style>

@@ -23,20 +23,23 @@
     }
   },
     "about": {
-      "bio": "I discovered oil painting while I was enlisted in the U.S. Air Force in Alaska in the early 1960s. I studied the 'wet-on-wet' technique, also known as 'Alla Prima', used by other great painters such as Rembrandt & Monet. This allowed me to produce complete paintings in less than an hour. I then became an art instructor, creating my iconic image and eventually teaching a TV audience of millions on the TV show The Joy of Painting.",
-      "tagline": "We don't make mistakes, just happy little accidents",
+      "bio": "As a dedicated and goal-oriented professional, I am committed to advancing my career in Full Stack Web Development. My passion for technology and my drive to achieve excellence in all my endeavors fuel my journey. I am highly adaptable and thrive in diverse working environments, which enables me to navigate and excel in various situations. With a focus on continuous learning and professional growth, I am eager to gain experience and contribute effectively to any team. I believe in the importance of pursuing one’s dreams while maintaining a balanced and enjoyable approach to work and life.",
+      "tagline": "FAILURE Is Not FATAL,  SUCCESS Is Not FInal",
       "facts": [
         {"name": "Hometown",
-        "value": "Orlando, FL"
+        "value": " Bonteheuwel, Cape Town"
         },
-        {"name": "Painting Technique",
-        "value": "Alla Prima"
+
+        {"name": "Phone",
+        "value": " 064 031 4176"
         },
-        {"name": "# of Paintings",
-        "value": "1,143"
+
+        {"name": "Resume",
+        "value": "https://drive.google.com/uc?export=download&id=1eR4opf_Mh8h2LNUNjNpJUVlSUcLiiFge"
         },
-        {"name": "Sun Sign",
-          "value": "Scorpio"
+
+        {"name": "Email",
+          "value": " langeveldt20joshua@gmail.com"
         }
       ]
     },

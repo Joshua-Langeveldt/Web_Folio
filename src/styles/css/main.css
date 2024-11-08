@@ -56,13 +56,33 @@ a {
   a:hover {
     cursor: pointer;
     text-decoration: none;
-    color: #ed2024; }
+    background: linear-gradient(-45deg, #f5ba19, #f12711, #f5ba19); /* Gradient applied to text */
+    -webkit-background-clip: text; /* Ensures background clip is applied to text */
+    color: transparent;
+    
+     }
 
-.section-header {
-  text-decoration: underline;
-  text-decoration-color: #ed2024;
-  text-decoration-thickness: 0.375rem;
-  padding-bottom: 2rem; }
+     .section-header {
+      text-transform: uppercase;
+      position: relative; /* Allow positioning of the pseudo-element */
+      display: inline-block; /* Make sure the underline spans the width of the text */
+      padding-bottom: 2rem;
+      font-size: 3rem;
+      text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.7); /* Text shadow for first name */
+
+      
+    }
+    
+    .section-header::after {
+      content: ''; /* Necessary for the pseudo-element */
+      position: absolute; /* Position it absolutely at the bottom */
+      bottom: 31px;
+      left: 0;
+      width: 100%;
+      height: 0.5rem; /* Set the thickness of the underline */
+      background: linear-gradient(-45deg, #f5ba19, #f12711, #f5ba19);
+    }
+  
 
 p {
   font-family: "Karla", sans-serif;
@@ -72,24 +92,36 @@ p {
   font-family: "Rubik", sans-serif;
   font-weight: bold;
   letter-spacing: 0.2rem;
-  color: #ed2024;
-  font-size: 1.2rem; }
+  background: linear-gradient(-45deg, #f5ba19, #f12711, #f5ba19); /* Gradient applied to text */
+  -webkit-background-clip: text; /* Ensures background clip is applied to text */
+  color: transparent;
+  font-size: 1.2rem; 
+  text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.7); /* Text shadow for first name */
+
+}
 
 .nav-item {
   font-family: "Karla", sans-serif;
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.8rem;
-  color: #f0f0f0; }
+  font-weight: 400;
+  font-size: 1rem;
+  color: #f0f0f0;
+  text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.7); /* Text shadow for first name */
+
+ }
 
 .banner-text {
   color: #f0f0f0; }
   .banner-text .display-text {
     font-size: 6rem; }
   .banner-text #typewriter {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     color: inherit;
-    text-transform: none; }
+    text-transform: none;
+  font-weight: 300;
+  text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.7); /* Text shadow for first name */
+
+ }
 
 .footer {
   font-size: 0.8rem; }
@@ -116,7 +148,10 @@ section {
   margin: 0 auto; }
 
 .filters .active {
-  color: #ed2024; }
+  background: linear-gradient(-45deg, #f5ba19, #f12711, #f5ba19); /* Gradient applied to text */
+  -webkit-background-clip: text; /* Ensures background clip is applied to text */
+  color: transparent;
+}
 
 header {
   position: relative;
@@ -139,7 +174,11 @@ header {
   header #Logo {
     max-height: 4rem; }
   header .active-nav a {
-    color: #ed2024 !important; }
+    background: linear-gradient(-45deg, #f5ba19, #f12711, #f5ba19); /* Gradient applied to text */
+    -webkit-background-clip: text; /* Ensures background clip is applied to text */
+    color: transparent;
+  }
+
   header .banner {
     display: inline-block;
     vertical-align: middle;
@@ -154,7 +193,10 @@ header {
   header .arrow-icon i {
     color: #f0f0f0; }
     header .arrow-icon i:hover {
-      color: #ed2024; }
+      background: linear-gradient(-45deg, #f5ba19, #f12711, #f5ba19); /* Gradient applied to text */
+      -webkit-background-clip: text; /* Ensures background clip is applied to text */
+      color: transparent; 
+     }
 
 .footer {
   background-color: #1d1f21;
@@ -176,7 +218,7 @@ header {
 #about .profile-pic {
   max-width: 100%;
   max-height: 300px;
-  border-radius: 50%;
+  border-radius: 8%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 #about .tagline {
@@ -184,7 +226,8 @@ header {
 
 #about #about-content {
   text-align: justify;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 #skills #skill-container {
   margin: 2rem auto;
@@ -342,3 +385,6 @@ header {
     margin: auto; }
     .arrow-container .arrow-icon a {
       color: #f0f0f0; }
+
+
+

@@ -1,15 +1,11 @@
-<!-- eslint-disable vue/no-reserved-component-names -->
-<!-- eslint-disable vue/multi-word-component-names -->
-
 <template>
   <header id="home" class="bg">
     <nav class="navbar navbar-expand-lg fixed-top dark-bg">
       <a class="navbar-brand" href="#">
-        <div v-if="main.logo"><img src="../../assets/images/logo.png" alt="logo" id="Logo"></div>
-        <div v-if="!main.logo">
-          <span id="FirstName">{{main.name.first}}</span> <span id="LastName">{{main.name.last}}</span>
+        <div v-if="main.logo">
+          <img src="../../assets/images/logo.png" alt="logo" id="Logo">
         </div>
-        </a>
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -33,6 +29,12 @@
         </ul>
       </div>
     </nav>
+    <div class="name-container">
+      <div class="image-above-name">
+        <img src="https://joshua-langeveldt.github.io/images/images/People/Jam-Inside.jpg" alt="Above Name Image" class="above-name-image">
+      </div>
+     
+    </div>
     <AppBanner />
     <AppArrow />
   </header>
@@ -49,13 +51,59 @@ export default {
     AppBanner,
     AppArrow,
   },
-  props: {},
   data() {
     return {
-      main: data.main,
+      main: data.main || {}, // Initialize main with data from JSON or empty object
     };
   },
+  mounted() {
+    console.log("Data loaded:", this.main); // Log data for verification
+  }
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+
+#Logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.name-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.image-above-name {
+  text-align: center;
+  margin-bottom: 230px;
+  padding: 5px;
+}
+
+.above-name-image {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+  margin: auto auto;
+  border-radius: 8%;
+
+  
+}
+
+/* Navbar styling to ensure it doesn't overlap the name container */
+.navbar {
+  z-index: 2;
+}
+
+</style>
