@@ -42,7 +42,10 @@ h1, h2, h3 {
 
 h2, h3 {
   text-transform: uppercase;
-  color: #747474; }
+  color: #747474;
+  text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.7); /* Text shadow for first name */
+
+ }
 
 h2 {
   font-size: 1.5rem; }
@@ -111,16 +114,24 @@ p {
  }
 
 .banner-text {
-  color: #f0f0f0; }
-  .banner-text .display-text {
-    font-size: 6rem; }
-  .banner-text #typewriter {
-    font-size: 2.5rem;
-    color: inherit;
-    text-transform: none;
-  font-weight: 300;
-  text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.7); /* Text shadow for first name */
+  color: #f0f0f0;
 
+ }
+
+  .banner-text .display-text {
+    font-size: 6rem;
+   }
+
+
+  .banner-text #typewriter {
+  font-size: 1.7rem;
+  color: inherit;
+  text-transform: none;
+  margin-left: 2rem;
+  text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.7); /* Text shadow for first name */
+  font-family: "Ruda", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal;
  }
 
 .footer {

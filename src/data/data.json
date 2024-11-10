@@ -44,13 +44,13 @@
       ]
     },
     "skills": {
-    "defaultCategory": "Painting",
+    "defaultCategory": "Technical",
     
     "categories": [
       {
-        "category": "Painting",
+        "category": "Technical",
         "subtitle": "My true passion!",
-        "faClass": "fas fa-paint-brush",        
+        "faClass": "fas fa-terminal", 
         "skillList":[
           {
             "name": "Oil Painting",
@@ -73,22 +73,55 @@
       },
 
       {
-        "category": "Teaching",
-        "subtitle": "",
-        "faClass": "fas fa-chalkboard-teacher",        
+        "category": "Psychological",
+        "subtitle": "Mastering The Mind",
+        "faClass": "fas fa-brain",  
         "skillList":[
+
+          
           {
-            "name": "Communication",
+            "name": "Communication Strategies",
             "level": "90"
           },
           
           {
-            "name": "Patience",
+            "name": "Work-Life Balance ",
+            "level": "60"
+          },
+
+          {
+            "name": "Self Leadership",
             "level": "100"
           },
+
           {
-            "name": "Leadership",
+            "name": "Negotiation Skills",
+            "level": "80"
+          },
+
+          {
+            "name": "Goal Setting",
+            "level": "100"
+          },
+
+          {
+            "name": "Emotional Intelligence",
             "level": "90"
+          },
+
+          {
+            "name": "Critical Thinking",
+            "level": "80"
+          },
+
+          {
+            "name": "Body Language",
+            "level": "70"
+          },
+
+          {
+            "name": "Self Awareness",
+            "level": "95"
           }
         ]
       }

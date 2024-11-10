@@ -82,6 +82,10 @@ export default {
   align-items: center;
   justify-content: center;
   z-index: 1;
+  font-family: "Ruda", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .image-above-name {

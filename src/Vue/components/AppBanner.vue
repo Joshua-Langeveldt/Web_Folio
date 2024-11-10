@@ -48,7 +48,7 @@ export default {
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
   text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.7); /* Text shadow for first name */
-
+  
 
 
 }
