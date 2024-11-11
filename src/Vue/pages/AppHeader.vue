@@ -36,12 +36,10 @@
      
     </div>
     <AppBanner />
-    <AppArrow />
   </header>
 </template>
 
 <script>
-import AppArrow from "../components/AppArrow.vue";
 import data from "../../data/data.json";
 import AppBanner from "../components/AppBanner.vue";
 
@@ -49,7 +47,6 @@ export default {
   name: "AppHeader",
   components: {
     AppBanner,
-    AppArrow,
   },
   data() {
     return {
@@ -63,6 +60,10 @@ export default {
 </script>
 
 <style lang="scss">
+
+#home{
+  overflow: hidden;
+}
 
 #Logo {
   width: 100%;
