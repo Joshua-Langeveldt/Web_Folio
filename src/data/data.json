@@ -18,7 +18,7 @@
     "headings": {
       "about": "About",
       "skills": "Skills",
-      "portfolio": "Portfolio",
+      "portfolio": "Projects",
       "contact": "Contact"
     }
   },
@@ -43,131 +43,262 @@
         }
       ]
     },
-    "skills": {
-    "defaultCategory": "Painting",
+ "skills": {
+    "defaultCategory": "Technical",
     
     "categories": [
       {
-        "category": "Painting",
+        "category": "Technical",
         "subtitle": "My true passion!",
-        "faClass": "fas fa-paint-brush",        
+        "faClass": "fas fa-terminal", 
         "skillList":[
           {
-            "name": "Oil Painting",
-            "level": "100"
+            "name": "HTML",
+            "level": "90",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/html-live.gif"
+
           },
           {
-            "name": "Watercolor",
-            "level": "90"
+            "name": "CSS",
+            "level": "80",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/css-live.gif"
+
           },
           
           {
-            "name": "Acrylic",
-            "level": "70"
+            "name": "BOOTSTRAP",
+            "level": "80",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/bootstrap.png"
+
           },
           {
-            "name": "Pastels",
-            "level": "60"
+            "name": "JAVASCRIPT",
+            "level": "70",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/javascript.png"
+
+          },
+          {
+            "name": "VUE.JS",
+            "level": "80",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/vue.png"
+
+          },
+          {
+            "name": "NODE.JS",
+            "level": "70",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/nodejs.png"
+
+          },
+          {
+            "name": "MYSQL",
+            "level": "60",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/mysql.png"
+
+          },
+          {
+            "name": "API",
+            "level": "50",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/api-live.gif"
+
+          },
+          {
+            "name": "GIT",
+            "level": "90",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/git.png"
+
+          },
+          {
+            "name": "GITHUB",
+            "level": "100",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/github.png"
+
+          },
+          {
+            "name": "COMMAND LINE",
+            "level": "80",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/command.png"
+
+          },
+          {
+            "name": "PYTHON",
+            "level": "40",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/python.png"
+
           }
         ]
       },
 
       {
-        "category": "Teaching",
-        "subtitle": "",
-        "faClass": "fas fa-chalkboard-teacher",        
+        "category": "Psychological",
+        "subtitle": "Mastering The Mind",
+        "faClass": "fas fa-brain",  
         "skillList":[
-          {
-            "name": "Communication",
-            "level": "90"
-          },
+
+          
+          
           
           {
-            "name": "Patience",
-            "level": "100"
+            "name": "Work-Life Balance ",
+            "level": "60",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/work-life-balance-live.gif"
+
           },
+
           {
-            "name": "Leadership",
-            "level": "90"
+            "name": "Self Leadership",
+            "level": "100",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/self-leadership.png"
+
+          },
+
+          {
+            "name": "Negotiation Skills",
+            "level": "80",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/negotiation-live.gif"
+
+          },
+
+          {
+            "name": "Goal Setting",
+            "level": "100",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/goal.png"
+
+          },
+
+          {
+            "name": "Critical Thinking",
+            "level": "80",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/critical-thinking-live.gif"
+
+          },
+
+          {
+            "name": "Body Language",
+            "level": "70",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/person.png"
+
+          },
+
+          {
+            "name": "Self Awareness",
+            "level": "90",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/self-awareness-live.gif"
+
+          },
+
+          {
+            "name": "Self Reflection",
+            "level": "100",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/self-reflection-live.gif"
+
+          },
+
+          {
+            "name": "Emotional Intelligence",
+            "level": "90",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/emotional-intelligence-live.gif"
+
+          },
+
+          {
+            "name": "Communication Strategies",
+            "level": "80",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/communication-live.gif"
+
+          },
+
+          {
+            "name": "Improving Mindfulness",
+            "level": "70",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/mindfulness-live.gif"
+
+          },
+
+          {
+            "name": "Problem Anticipating",
+            "level": "50",
+            "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/problem-anticipation.png"
+
           }
+
         ]
       }
     ]
   },
 "portfolio": {
-  "defaultFilter": "mountains",
+  "defaultFilter": "Beginner",
   "projects": [
     {
-      "title": "Peaceful Valley",
-      "description": "S1E8",
-      "image": "peacefulvalley.png",
-      "link": "https://www.twoinchbrush.com/painting/peaceful-valley",
-      "source": "https://www.twoinchbrush.com/painting/peaceful-valley",
-      "filter": "mountains"
+      "title": "Dicce Game",
+      "description": "A Quick Decision Making Game",
+      "image": "https://joshua-langeveldt.github.io/Global-Images/images/Projects/dicce-game.png",
+      "link": "https://dicce-game-03a2fd.netlify.app/",
+      "source": "https://github.com/King20Jamin/Dicce_Game_Rojectpay.git",
+      "filter": "Beginner"
         },
     {
-      "title": "Meadow Lake",
-      "description": "S2E1",
-      "image": "meadowlake.png",
-      "link": "https://www.twoinchbrush.com/painting/meadow-lake",
-      "source": "https://www.twoinchbrush.com/painting/meadow-lake",
-      "filter": "mountains"
+      "title": "Drum Kit",
+      "description": "A Sweet Beat Maker",
+      "image": "https://joshua-langeveldt.github.io/Global-Images/images/Projects/drum_kit.png",
+      "link": "https://the-drum-kit-20e7f1e.netlify.app/",
+      "source": "https://github.com/King20Jamin/DrumKit_Rojectpay.git",
+      "filter": "Beginner"
     },
     {
-      "title": "Final Grace",
-      "description": "S2E13",
-      "image": "finalgrace.png",
-      "link": "https://www.twoinchbrush.com/painting/final-grace",
-      "source": "https://www.twoinchbrush.com/painting/final-grace",
-      "filter": "mountains"
+      "title": "Calculator",
+      "description": "A Simple Calulator",
+      "image": "https://joshua-langeveldt.github.io/Global-Images/images/Projects/calculator.png",
+      "link": "https://calculator-j-edit-g1ethdcf7-jamin-joshua-langeveldts-projects.vercel.app/",
+      "source": "https://github.com/Joshua-Langeveldt/Calculator-J-Edit.git",
+      "filter": "Beginner"
     },
     {
-      "title": "Purple Splendor",
-      "description": "S4E1",
-      "image": "purplesplendor.png",
-      "link": "https://www.twoinchbrush.com/painting/purple-splendor",
-      "source": "https://www.twoinchbrush.com/painting/purple-splendor",
-      "filter": "snow"
+      "title": "Joshua's Vue Portfolio",
+      "description": "Vue Portfolio",
+      "image": "https://joshua-langeveldt.github.io/Global-Images/images/Projects/vue-portfolio.png",
+      "link": "https://vueportfolio-d4711.web.app/",
+      "source": "https://github.com/Joshua-Langeveldt/Vue-Portfolio.git",
+      "filter": "Intermediate"
     },
     {
-      "title": "Winter Stillness",
-      "description": "S5E4",
-      "image": "winterstillness.png",
-      "link": "https://www.twoinchbrush.com/painting/winter-stillness",
-      "source": "https://www.twoinchbrush.com/painting/winter-stillness",
-      "filter": "snow"
+      "title": "Tindog",
+      "description": "A Tinder For Dogs",
+      "image": "https://joshua-langeveldt.github.io/Global-Images/images/Projects/tin_dog.png",
+      "link": "https://tin-dog-20b22c.netlify.app/",
+      "source": "https://github.com/King20Jamin/TinDog-Project.git",
+      "filter": "Intermediate"
     },
     {
-      "title": "Grey Winter",
-      "description": "S7E11",
-      "image": "greywinter.png",
-      "link": "https://www.twoinchbrush.com/painting/grey-winter",
-      "source": "https://www.twoinchbrush.com/painting/grey-winter",
-      "filter": "snow"
+      "title": "Joshua's Bootstrap Portfolio",
+      "description": "Bootstrap Portfolio",
+      "image": "https://joshua-langeveldt.github.io/Global-Images/images/Projects/portfolio-B.png",
+      "link": "https://joshua-portfolio-five.vercel.app/",
+      "source": "https://github.com/Joshua-Langeveldt/JoshuaPortfolio.git",
+      "filter": "Intermediate"
     },
     {
-      "title": "Bubbling Stream",
-      "description": "S3E3",
-      "image": "bubblingstream.png",
-      "link": "https://www.twoinchbrush.com/painting/bubbling-stream",
-      "source": "https://www.twoinchbrush.com/painting/bubbling-stream",
-      "filter": "water"
+      "title": "Choc-A-Lot",
+      "description": "A Sweet Shop",
+      "image": "https://joshua-langeveldt.github.io/Global-Images/images/Projects/choc-a-lot.png",
+      "link": "https://choco-a-lot.vercel.app/",
+      "source": "https://github.com/Joshua-Langeveldt/Choco-A-Lot.git",
+      "filter": "Advance"
     },
     {
-      "title": "Blaze of Color",
-      "description": "S6E13",
-      "image": "blazeofcolor.png",
-      "link": "https://www.twoinchbrush.com/painting/blaze-of-color",
-      "source": "https://www.twoinchbrush.com/painting/blaze-of-color",
-      "filter": "water"
+      "title": "Aniverse",
+      "description": "Anime Universe",
+      "image": "https://joshua-langeveldt.github.io/images/images/Projects/aniverse.png",
+      "link": "https://aniverse-148b3.web.app/",
+      "source": "https://github.com/Joshua-Langeveldt/eomp_node.git",
+      "filter": "Advance"
     },
     {
-      "title": "Night Light",
-      "description": "S3E8",
-      "image": "nightlight.png",
-      "link": "https://www.twoinchbrush.com/painting/night-light",
-      "source": "https://www.twoinchbrush.com/painting/night-light",
-      "filter": "water"
+      "title": "Snack Shack",
+      "description": "Snack Smart, Snack Shack",
+      "image": "https://joshua-langeveldt.github.io/images/images/Projects/snack-shack.png",
+      "link": "https://snack-shack-c0be8.web.app/",
+      "source": "https://github.com/Joshua-Langeveldt/Snack_Shack.git",
+      "filter": "Advance"
     }
 
   ]
@@ -176,26 +307,21 @@
       "text": "It will be pretty hard to reach me, probably.",
       "formTitle": "Send Me A Message",
       "formEndPoint": "",
-      "city": "Orlando, Florida",
-      "email": "info@bobross.com",
-      "phone": "1-800-BOB-ROSS",
-      "resumeLink": "https://www.twoinchbrush.com/all-paintings",
+      "city": "Bonteheuwel, Cape Town",
+      "email": "langeveldt20joshua@gmail.com",
+      "phone": "064 031 4176",
+      "resumeLink": "https://drive.google.com/uc?export=download&id=1eR4opf_Mh8h2LNUNjNpJUVlSUcLiiFge",
       "form": true,
       
       "social": [
           {
-            "name": "twitter",
-            "url": "https://twitter.com/bobrossofficial",
-            "faClass": "fab fa-twitter"
-          },
-          {
-            "name": "facebook",
-            "url": "https://www.facebook.com/TheJoyofPaintingWithBobRoss/",
-            "faClass": "fab fa-facebook-f"
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/in/jamin-langeveldt-04b304289",
+            "faClass": "fab fa-linkedin"
           },
           {
             "name": "instagram",
-            "url": "https://www.instagram.com/bobross_thejoyofpainting/",
+            "url": "https://www.instagram.com/king_legendx/",
             "faClass": "fab fa-instagram"
           }
         ]

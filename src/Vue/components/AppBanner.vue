@@ -41,7 +41,7 @@ export default {
 .first-name {
   font-size: 5rem;
   font-weight: 400;
-  background: linear-gradient(-45deg, #f5ba19, #f12711, #f5ba19); /* Gradient applied to text */
+  background: linear-gradient(-45deg, #f5ba19, #f12711, #f5ba19, #f12711); /* Gradient applied to text */
   -webkit-background-clip: text; /* Ensures background clip is applied to text */
   color: transparent; /* Make the text color transparent to show the gradient */
   margin-top: 360px;

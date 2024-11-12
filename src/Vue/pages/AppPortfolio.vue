@@ -1,30 +1,26 @@
-<!-- eslint-disable vue/no-reserved-component-names -->
-<!-- eslint-disable vue/multi-word-component-names -->
-
 <template>
   <section id="portfolio" class="dark-section">
     <div class="container-fluid">
       <h1 class="section-header">{{ heading }}</h1>
 
-      <!-- start of filters  -->
+      <!-- start of filters -->
       <div class="row filters">
         <ul class="list-inline mx-auto">
           <li
             v-for="item in filters"
-            :key="item.title"
+            :key="item"
             class="list-inline-item filter"
           >
             <a
               class="nav-item"
-              :class="item.filter === currentFilter ? 'active' : null"
-              :data-filter="item.filter"
+              :class="item === currentFilter ? 'active' : null"
+              :data-filter="item"
               @click="setFilter"
-              >{{ item.filter }}</a
-            >
+            >{{ item }}</a>
           </li>
         </ul>
       </div>
-      <!-- end of filters  -->
+      <!-- end of filters -->
 
       <div id="portfolio-container" class="row">
         <div
@@ -35,19 +31,20 @@
           class="col-sm-12 col-md-4 flex-col"
         >
           <div class="portfolio-item">
-            <img :src="require(`../../assets/images/portfolio/${item.image}`)" />
+            <img :src="item.image" alt="Portfolio item image" />
             <div class="overlay">
-              <a :href="item.link" title="Live Demo" target="_blank">
-                <div class="portfolio-item-content">
-                  <h3>{{ item.title }}</h3>
-                  <p>{{ item.description }}</p>
-                  <div v-if="item.source !== '' " class="link-icons">
-                    <a :href="item.source" title="Source Code" target="_blank">
-                      <i class="fas fa-code fa-2x"></i>
-                    </a>
-                  </div>
+              <div class="portfolio-item-content">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+                <div class="button-group">
+                  <a :href="item.link" title="Live Demo" target="_blank">
+                    <button class="btn btn-primary">Live Demo</button>
+                  </a>
+                  <a :href="item.source" title="Source Code" target="_blank">
+                    <button class="btn btn-secondary">GitHub Repo</button>
+                  </a>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -57,13 +54,13 @@
   </section>
 </template>
 
+
 <script>
 import data from "../../data/data.json";
 import AppArrow from "../components/AppArrow.vue";
 
 export default {
   name: "AppPortfolio",
-  props: {},
   components: {
     AppArrow,
   },
@@ -76,23 +73,15 @@ export default {
   },
   computed: {
     filteredProjects() {
-      var projects = data.portfolio.projects;
-      var filter = this.currentFilter;
-      var filtered = projects.filter(function(x) {
-        return x.filter === filter;
+      // Filter projects based on the selected filter
+      return this.projects.filter(project => {
+        return this.currentFilter === "All" || project.filter === this.currentFilter;
       });
-      return filtered;
     },
     filters() {
-      var filterList = [];
-      var projects = data.portfolio.projects;
-      filterList = projects.filter(function(x) {
-        if (!filterList.includes(x.filter)) {
-          filterList.push(x.filter);
-          return x.filter;
-        }
-      });
-      return filterList;
+      // Create a unique list of filters
+      const uniqueFilters = [...new Set(this.projects.map(project => project.filter))];
+      return ["All", ...uniqueFilters];
     },
   },
   methods: {
@@ -103,4 +92,18 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+
+
+.portfolio-item-content h3{
+  text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.7) !important;
+  font-size: 1.7rem !important;
+  
+  }
+
+  .portfolio-item-content p {
+
+    text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.7) !important;
+    font-size: 1rem !important;
+  }
+</style>

@@ -16,7 +16,7 @@
         <a class="nav-item nav-link" href="#skills">Skills</a>
       </li>
       <li class="list-inline-item">
-        <a class="nav-item nav-link" href="#portfolio">portfolio</a>
+        <a class="nav-item nav-link" href="#portfolio">Projects</a>
       </li>
       <li class="list-inline-item">
         <a class="nav-item nav-link" href="#contact">Contact</a>
@@ -44,12 +44,12 @@
     </div>
     <div class="credit">
       <p>
-        Designed with 👽 by
+        DESIGNED WITH ❤️ BY
         <a
           id="username"
-          href="https://www.github.com/darnocer"
-          alt="Darian's Github"
-          >darnocer</a
+          href="https://github.com/Joshua-Langeveldt?tab=repositories"
+          alt="Joshua's Github"
+          >King👑Legend</a
         >
       </p>
     </div>
@@ -72,4 +72,8 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+
+
+
+</style>

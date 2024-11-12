@@ -152,4 +152,13 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.input-group {
+
+  box-shadow: 0.5rem 0.5rem 0.5rem #666;
+}
+
+.form-group{
+  box-shadow: 0.5rem 0.5rem 0.5rem #666;
+}
+</style>
