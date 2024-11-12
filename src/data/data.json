@@ -43,7 +43,11 @@
         }
       ]
     },
+<<<<<<< HEAD
  "skills": {
+=======
+    "skills": {
+>>>>>>> d2efa1ba2288a522db1e7b2ad2a178f5cd4c52ad
     "defaultCategory": "Technical",
     
     "categories": [
@@ -135,6 +139,7 @@
         "skillList":[
 
           
+<<<<<<< HEAD
           
           
           {
@@ -156,10 +161,31 @@
             "level": "80",
             "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/negotiation-live.gif"
 
+=======
+          {
+            "name": "Communication Strategies",
+            "level": "90"
+          },
+          
+          {
+            "name": "Work-Life Balance ",
+            "level": "60"
+          },
+
+          {
+            "name": "Self Leadership",
+            "level": "100"
+          },
+
+          {
+            "name": "Negotiation Skills",
+            "level": "80"
+>>>>>>> d2efa1ba2288a522db1e7b2ad2a178f5cd4c52ad
           },
 
           {
             "name": "Goal Setting",
+<<<<<<< HEAD
             "level": "100",
             "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/goal.png"
 
@@ -191,10 +217,14 @@
             "level": "100",
             "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/self-reflection-live.gif"
 
+=======
+            "level": "100"
+>>>>>>> d2efa1ba2288a522db1e7b2ad2a178f5cd4c52ad
           },
 
           {
             "name": "Emotional Intelligence",
+<<<<<<< HEAD
             "level": "90",
             "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/emotional-intelligence-live.gif"
 
@@ -219,6 +249,24 @@
             "level": "50",
             "image": "https://joshua-langeveldt.github.io/Global-Images/images/Icons/problem-anticipation.png"
 
+=======
+            "level": "90"
+          },
+
+          {
+            "name": "Critical Thinking",
+            "level": "80"
+          },
+
+          {
+            "name": "Body Language",
+            "level": "70"
+          },
+
+          {
+            "name": "Self Awareness",
+            "level": "95"
+>>>>>>> d2efa1ba2288a522db1e7b2ad2a178f5cd4c52ad
           }
 
         ]
