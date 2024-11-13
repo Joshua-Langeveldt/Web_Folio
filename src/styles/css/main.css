@@ -129,7 +129,11 @@ p {
  }
 
 .banner-text {
-<<<<<<< HEAD
+  color: #f0f0f0; }
+  .banner-text .display-text {
+    font-size: 6rem; }
+  .banner-text #typewriter {
+    font-size: 2rem;
   color: #f0f0f0; }
   .banner-text .display-text {
     font-size: 6rem; }
@@ -139,9 +143,8 @@ p {
     text-transform: none;
   font-weight: 300;
   text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.7); /* Text shadow for first name */
-=======
+
   color: #f0f0f0;
->>>>>>> d2efa1ba2288a522db1e7b2ad2a178f5cd4c52ad
 
  }
 
@@ -196,32 +199,18 @@ header {
   height: 100%;
   width: 100%;
   background: no-repeat center center fixed;
-<<<<<<< HEAD
   background-image: linear-gradient(to right bottom, rgba(34, 34, 34, 0.2), rgba(34, 34, 34, 0.2)), url(https://images.unsplash.com/photo-1589848315097-ba7b903cc1cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-=======
-  background-image: linear-gradient(to right bottom, rgba(34, 34, 34, 0.2), rgba(34, 34, 34, 0.2));
->>>>>>> d2efa1ba2288a522db1e7b2ad2a178f5cd4c52ad
-  background-size: cover;
-  -webkit-background-size: cover;
-  text-align: center;
-  object-fit: cover;
- }
-  header a:link {
-    color: #f0f0f0; }
-  header .navbar-brand {
-    font-size: 1.8rem;
-    letter-spacing: -0.2rem; }
-  header #FirstName {
-    color: #f0f0f0; }
+  /* background-image: linear-gradient(to right bottom, rgba(34, 34, 34, 0.2), rgba(34, 34, 34, 0.2)); */
   header #LastName {
     color: #ed2024; }
   header #Logo {
     max-height: 4rem; }
   header .active-nav a {
-    background: linear-gradient(-45deg, #f5ba19, #f12711, #f5ba19); /* Gradient applied to text */
+    background: linear-gradient(-45deg, #f5ba19, #f12711, #f5ba19) !important;
     -webkit-background-clip: text; /* Ensures background clip is applied to text */
     color: transparent;
   }
+}
 
   header .banner {
     display: inline-block;
