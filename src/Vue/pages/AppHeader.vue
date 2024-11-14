@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg fixed-top dark-bg">
       <a class="navbar-brand" href="#">
         <div v-if="main.logo">
-          <img src="../../assets/images/logo.png" alt="logo" id="Logo">
+          <img src="https://joshua-langeveldt.github.io/Global-Images/images/Logo/Jamin-Logo.png" alt="logo" id="Logo">
         </div>
       </a>
       <button
@@ -82,10 +82,15 @@ export default {
 
 #Logo {
   width: 100%;
-  max-width: 200px;
   height: auto;
   display: block;
   margin: 0 auto;
+  max-width: 80px;
+  border: 2px solid #ccc;
+  border-radius: 8px; 
+  transition: transform 0.3s;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .name-container {
@@ -143,4 +148,5 @@ export default {
 .navbar-toggler {
   z-index: 3;
 }
+
 </style>
