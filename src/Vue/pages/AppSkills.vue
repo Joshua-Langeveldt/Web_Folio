@@ -100,13 +100,10 @@ export default {
 
 <style scoped lang="scss">
 .category-heading i{
-  
   text-shadow: none; /* Text shadow for first name */
-
 }
 
 .skill-image {
-
   width: 100%;
   max-width: 150px;
   height: auto;  
@@ -118,16 +115,11 @@ export default {
   transition: transform 0.3s;
   object-fit: cover;
   overflow: hidden;
-
-
-
 }
 
-img:hover{
+img:hover {
   transform: scale(1.05);
 }
 
-
-
-
 </style>
+

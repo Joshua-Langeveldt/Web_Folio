@@ -1,3 +1,8 @@
+
+
+
+
+
 *,
 *::after,
 *::before {
@@ -14,6 +19,13 @@ body,
 body {
   box-sizing: border-box;
   overflow-x: hidden; }
+
+  :root {
+    --desktop: 1200px;
+    --laptop: 1024px;
+    --tablet: 768px;
+    --phone: 480px;
+  }
 
 .light-section {
   background-color: #f0f0f0;
@@ -452,5 +464,525 @@ header {
     .arrow-container .arrow-icon a {
       color: #f0f0f0; }
 
+      @media (width < 479px) {
+        body {
+          font-size: 12px;
+          width: 100% !important;
+          height: auto;
+        }
 
+        .image-container{
+          display: none !important;
+        }
+
+        .image-above-name .above-name-image{
+
+          /* font-size:1rem !important; */
+          margin-bottom: 3rem !important;
+          width: 100%;
+          max-width:180px;
+
+        }
+
+        .banner .banner-text .first-name{
+          font-size: 3rem !important;
+         }
+
+         .banner .banner-text #typewriter{
+          font-size: 1.4rem !important;
+          margin-left: -2px;
+         }
+
+         /* Adjust category heading */
+  .category-heading h2 {
+    font-size: 1.2rem;
+  }
+
+  .category-heading h3 {
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+  /* Further adjust skill image size */
+  .skill-image {
+    max-width: 100px;
+    margin: 15px auto;
+  }
+
+  /* Stack skills in a single column */
+  .skill {
+    width: 80%;  /* Single skill per row */
+    margin: 15px auto;
+  }
+
+  /* Adjust skill name font size */
+  .skill-name {
+    font-size: 0.9rem;
+  }
+
+  /* Adjust filter layout */
+  .filters ul {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .filters li {
+    display: inline-block;
+    margin: 5px 8px;
+  }
+
+  .filters .nav-item {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+      }
+      
+      @media (480px <= width < 768px) {
+        body {
+          font-size: 14px;
+        }
+
+        .image-container{
+          display: none !important;
+        }
+
+        .image-above-name .above-name-image{
+
+          margin-bottom: 3rem !important;
+          width: 100%;
+          max-width:180px;
+          margin-bottom: 3rem !important;
+
+        }
+
+        .banner .banner-text .first-name {
+          font-size: 3rem !important;
+         }
+
+         .banner .banner-text .last-name{
+          font-size: 3rem !important;
+         }
+
+         .banner .banner-text #typewriter{
+          font-size: 1.4rem !important;
+          margin-left: -2px;
+         }
+
+
+
+        /* Adjust category heading */
+  .category-heading h2 {
+    font-size: 1.4rem;
+  }
+
+  .category-heading h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  /* Adjust skill image size */
+  .skill-image {
+    max-width: 120px;
+    margin: 20px auto;
+  }
+
+  /* Stack skills vertically */
+  .skillbars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill {
+    width: 45%;  /* Two skills per row */
+    margin: 10px;
+  }
+
+  /* Adjust skill name font size */
+  .skill-name {
+    font-size: 1rem;
+  }
+
+  /* Adjust filter layout */
+  .filters ul {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .filters li {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .filters .nav-item {
+    font-size: 1.1rem;
+    padding: 8px 15px;
+  }
+
+      }
+      
+      @media (769px <= width < 1024px) {
+        body {
+          font-size: 14px;
+        }
+
+        .image-container{
+          display: none !important;
+        }
+
+        .image-above-name .above-name-image{
+
+          margin-bottom: 3rem !important;
+          width: 100%;
+          max-width:220px;
+          margin-bottom: 3rem !important;
+
+        }
+
+        .banner .banner-text .first-name {
+          font-size: 4rem !important;
+         }
+
+         .banner .banner-text .last-name{
+          font-size: 4rem !important;
+         }
+
+         .banner .banner-text #typewriter{
+          font-size: 1.5rem !important;
+          margin-left: -2px;
+         }
+
+
+
+        /* Adjust category heading */
+  .category-heading h2 {
+    font-size: 1.4rem;
+  }
+
+  .category-heading h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  /* Adjust skill image size */
+  .skill-image {
+    max-width: 120px;
+    margin: 20px auto;
+  }
+
+  /* Stack skills vertically */
+  .skillbars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill {
+    width: 35%;  /* Two skills per row */
+    margin: 10px;
+  }
+
+  /* Adjust skill name font size */
+  .skill-name {
+    font-size: 1rem;
+  }
+
+  /* Adjust filter layout */
+  .filters ul {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .filters li {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .filters .nav-item {
+    font-size: 1.1rem;
+    padding: 8px 15px;
+  }
+
+
+/* General Styling */
+#about .profile-pic {
+  max-width: 200%;
+  width: 500px;
+  max-height: 250px;
+  border-radius: 8%;
+  box-shadow: 0.5rem 0.5rem 0.5rem #000;
+  margin-left: -5.8rem;
+}
+
+#about .tagline {
+  font-size: 1.5rem;
+}
+
+#about #about-content {
+  font-size: 1.1rem;
+  width:250%;
+  text-align: start;
+  margin-left: -5.6rem;
+}
+
+/* Arrange the bio and list items side-by-side below the image on larger screens */
+  #about .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+.list-group-item {
+  display: flex;
+  justify-content: start;
+  margin-left: -6.5rem;
+  
+}
+
+.btn {
+  align-items: center;
+  justify-content: center;
+  margin-top: -0.5rem !important;
+  margin-left: 0.5rem;
+  width: 100%;
+  color: #fff !important;
+  background-color: transparent !important;
+  border: 1px solid #f5ba19 !important;
+}
+
+.btn:hover {
+  background: linear-gradient(-45deg, #f5ba19, #f12711, #f5ba19, #f12711) !important;
+}
+
+.list-value {
+  margin-left: 0.5rem !important;
+}
+
+#portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  margin-left: -8rem;
+}
+
+#portfolio .portfolio-item {
+  flex: 0 0 48%; /* Ensures two items per row */
+  width: 150%;
+}
+
+.portfolio-item .button-group{
+
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+#contact .contact-content {
+  padding: 2rem; 
+  margin: -2rem auto;
+}
+
+#contact .contact-info {
+  padding: 2rem; 
+  margin: -2rem auto;
+}
+
+.btn-resume {
+  background-color: #222222 !important;
+  margin-top: 1rem !important;
+  margin-left: -1rem !important;
+  width: 130%;
+
+}
+
+}
+      
+      
+      @media (1025px <= width < 1100px) {
+        body {
+          font-size: 14px;
+        }
+
+        .image-above-name .above-name-image{
+
+          margin-bottom: 3rem !important;
+          width: 100%;
+          max-width:220px;
+          margin-bottom: 3rem !important;
+
+        }
+
+        .banner .banner-text .first-name {
+          font-size: 4rem !important;
+         }
+
+         .banner .banner-text .last-name{
+          font-size: 4rem !important;
+         }
+
+         .banner .banner-text #typewriter{
+          font-size: 1.5rem !important;
+          margin-left: -2px;
+         }
+
+
+
+        /* Adjust category heading */
+  .category-heading h2 {
+    font-size: 1.4rem;
+  }
+
+  .category-heading h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  /* Adjust skill image size */
+  .skill-image {
+    max-width: 120px;
+    margin: 20px auto;
+  }
+
+  /* Stack skills vertically */
+  .skillbars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill {
+    width: 15%;  /* Two skills per row */
+    margin: 10px;
+  }
+
+  /* Adjust skill name font size */
+  .skill-name {
+    font-size: 1rem;
+  }
+
+  /* Adjust filter layout */
+  .filters ul {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .filters li {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .filters .nav-item {
+    font-size: 1.1rem;
+    padding: 8px 15px;
+  }
+
+
+/* General Styling */
+#about .profile-pic {
+  max-width: 200%;
+  width: 500px;
+  max-height: 350px;
+  border-radius: 8%;
+  box-shadow: 0.5rem 0.5rem 0.5rem #000;
+  margin-left: -7.4rem;
+}
+
+#about .tagline {
+  font-size: 1.5rem;
+}
+
+#about #about-content {
+  font-size: 1.1rem;
+  width:200%;
+  text-align: start;
+  margin-left: -7rem;
+}
+
+/* Arrange the bio and list items side-by-side below the image on larger screens */
+  #about .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+.list-group-item {
+  display: flex;
+  justify-content: start;
+  margin-left: -8.4rem;
+  
+}
+
+.btn {
+  align-items: center;
+  justify-content: center;
+  margin-top: -0.5rem !important;
+  margin-left: 0.5rem;
+  width: 100%;
+  color: #fff !important;
+  background-color: transparent !important;
+  border: 1px solid #f5ba19 !important;
+}
+
+.btn:hover {
+  background: linear-gradient(-45deg, #f5ba19, #f12711, #f5ba19, #f12711) !important;
+}
+
+.list-value {
+  margin-left: 0.5rem !important;
+}
+
+#portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-left: -8rem;
+}
+
+#portfolio .portfolio-item {
+  flex: 0 0 48%; /* Ensures two items per row */
+  width: 120%;
+}
+
+.portfolio-item .button-group{
+
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+#contact .contact-content {
+  padding: 2rem; 
+  margin: -2rem auto;
+}
+
+#contact .contact-info {
+  padding: 2rem; 
+  margin: -2rem 2rem;
+}
+
+.btn-resume {
+  background-color: #222222 !important;
+  margin-top: 1rem !important;
+  margin-left: -0.5rem !important;
+  width: 130%;
+
+}
+      }
+      
 
