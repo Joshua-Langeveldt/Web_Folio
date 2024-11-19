@@ -8,6 +8,8 @@
     <AppAbout />
     <AppSkills />
     <AppPortfolio />
+    <EducationSection />
+    <AppCertification />
     <AppContact />
     <AppFooter />
   </div>
@@ -21,6 +23,8 @@ import AppPortfolio from "./Vue/pages/AppPortfolio.vue";
 import AppContact from "./Vue/pages/AppContact.vue";
 import AppFooter from "./Vue/pages/AppFooter.vue";
 import StartHero from './Vue/components/StartHero.vue';
+import EducationSection from "./Vue/pages/EducationSection.vue";
+import AppCertification from "./Vue/pages/AppCertification.vue";
 
 export default {
   name: "App",
@@ -28,6 +32,8 @@ export default {
     // AppHeader,
     AppAbout,
     AppSkills,
+    EducationSection,
+    AppCertification,
     AppPortfolio,
     AppContact,
     AppFooter,

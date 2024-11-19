@@ -1,5 +1,7 @@
 
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 
 
@@ -570,6 +572,8 @@ header {
 
 
 
+
+
         /* Adjust category heading */
   .category-heading h2 {
     font-size: 1.4rem;
@@ -619,9 +623,10 @@ header {
     padding: 8px 15px;
   }
 
+  
       }
       
-      @media (769px <= width < 1024px) {
+      @media (767px <= width < 1024px) {
         body {
           font-size: 14px;
         }
