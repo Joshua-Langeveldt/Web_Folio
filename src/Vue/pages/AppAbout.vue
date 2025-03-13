@@ -38,8 +38,8 @@
       </div>
     </div>
 
-    <AppArrow />
-  </section>
+    <AppArrow nextSectionId="skills" />  
+    </section>
 </template>
 
 <script>

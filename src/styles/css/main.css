@@ -466,11 +466,16 @@ header {
     .arrow-container .arrow-icon a {
       color: #f0f0f0; }
 
-      @media (width < 479px) {
+      /*MEDIA QUERIES*/
+
+      @media (360px <= width < 390px) {
         body {
-          font-size: 12px;
-          width: 100% !important;
-          height: auto;
+          font-size: 14px;
+        }
+
+        .section-header{
+          text-align: center;
+          font-size:2.4rem;
         }
 
         .image-container{
@@ -479,14 +484,18 @@ header {
 
         .image-above-name .above-name-image{
 
-          /* font-size:1rem !important; */
           margin-bottom: 3rem !important;
           width: 100%;
           max-width:180px;
+          margin-bottom: 3rem !important;
 
         }
 
-        .banner .banner-text .first-name{
+        .banner .banner-text .first-name {
+          font-size: 3rem !important;
+         }
+
+         .banner .banner-text .last-name{
           font-size: 3rem !important;
          }
 
@@ -495,31 +504,41 @@ header {
           margin-left: -2px;
          }
 
-         /* Adjust category heading */
+
+
+
+
+        /* Adjust category heading */
   .category-heading h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .category-heading h3 {
-    font-size: 0.9rem;
-    margin-top: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
   }
 
-  /* Further adjust skill image size */
+  /* Adjust skill image size */
   .skill-image {
-    max-width: 100px;
-    margin: 15px auto;
+    max-width: 120px;
+    margin: 20px auto;
   }
 
-  /* Stack skills in a single column */
+  /* Stack skills vertically */
+  .skillbars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .skill {
-    width: 80%;  /* Single skill per row */
-    margin: 15px auto;
+    width: 45%;  /* Two skills per row */
+    margin: 10px;
   }
 
   /* Adjust skill name font size */
   .skill-name {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   /* Adjust filter layout */
@@ -530,13 +549,110 @@ header {
 
   .filters li {
     display: inline-block;
-    margin: 5px 8px;
+    margin: 5px 10px;
   }
 
   .filters .nav-item {
-    font-size: 1rem;
-    padding: 6px 12px;
+    font-size: 1.1rem;
+    padding: 8px 15px;
   }
+
+  
+
+      }
+
+
+      @media (390px <= width < 479px) {
+        body {
+          font-size: 14px;
+        }
+
+        .section-header{
+          text-align: center;
+          font-size:2.4rem;
+        }
+
+        .image-container{
+          display: none !important;
+        }
+
+        .image-above-name .above-name-image{
+
+          margin-bottom: 3rem !important;
+          width: 100%;
+          max-width:180px;
+          margin-bottom: 3rem !important;
+
+        }
+
+        .banner .banner-text .first-name {
+          font-size: 3rem !important;
+         }
+
+         .banner .banner-text .last-name{
+          font-size: 3rem !important;
+         }
+
+         .banner .banner-text #typewriter{
+          font-size: 1.4rem !important;
+          margin-left: -2px;
+         }
+
+
+
+
+
+        /* Adjust category heading */
+  .category-heading h2 {
+    font-size: 1.4rem;
+  }
+
+  .category-heading h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  /* Adjust skill image size */
+  .skill-image {
+    max-width: 120px;
+    margin: 20px auto;
+  }
+
+  /* Stack skills vertically */
+  .skillbars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill {
+    width: 45%;  /* Two skills per row */
+    margin: 10px;
+  }
+
+  /* Adjust skill name font size */
+  .skill-name {
+    font-size: 1rem;
+  }
+
+  /* Adjust filter layout */
+  .filters ul {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .filters li {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .filters .nav-item {
+    font-size: 1.1rem;
+    padding: 8px 15px;
+  }
+
+  
+
       }
       
       @media (480px <= width < 768px) {
@@ -990,4 +1106,3 @@ header {
 }
       }
       
-

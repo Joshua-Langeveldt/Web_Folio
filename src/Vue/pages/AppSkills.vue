@@ -53,7 +53,7 @@
       </div>
       <!-- end of skill container -->
     </div>
-    <AppArrow />
+    <AppArrow nextSectionId="projects" />  
   </section>
 </template>
 

@@ -1,5 +1,6 @@
 <template>
   <header id="home" class="bg">
+    <div class="gradient-bg"></div>
     <nav class="navbar navbar-expand-lg fixed-top dark-bg">
       <a class="navbar-brand" href="#">
         <div v-if="main.logo">
@@ -20,19 +21,19 @@
       <div id="navbarNavAltMarkup" class="collapse navbar-collapse">
         <ul id="navbar-nav" class="navbar-nav ml-auto">
           <li :class="{'active-nav': isActive('home')}">
-            <a class="nav-item nav-link" href="#home" @click="setActive('home')">Home</a>
+            <a class="nav-item nav-link" href="#home" @click="scrollToSection('home')">Home</a>
           </li>
           <li :class="{'active-nav': isActive('about')}">
-            <a class="nav-item nav-link" href="#about" @click="setActive('about')">About</a>
+            <a class="nav-item nav-link" href="#about" @click="scrollToSection('about')">About</a>
           </li>
           <li :class="{'active-nav': isActive('skills')}">
-            <a class="nav-item nav-link" href="#skills" @click="setActive('skills')">Skills</a>
+            <a class="nav-item nav-link" href="#skills" @click="scrollToSection('skills')">Skills</a>
           </li>
-          <li :class="{'active-nav': isActive('portfolio')}">
-            <a class="nav-item nav-link" href="#portfolio" @click="setActive('portfolio')">Portfolio</a>
+          <li :class="{'active-nav': isActive('projects')}">
+            <a class="nav-item nav-link" href="#portfolio" @click="scrollToSection('portfolio')">Projects</a>
           </li>
           <li :class="{'active-nav': isActive('contact')}">
-            <a class="nav-item nav-link" href="#contact" @click="setActive('contact')">Contact</a>
+            <a class="nav-item nav-link" href="#contact" @click="scrollToSection('contact')">Contact</a>
           </li>
         </ul>
       </div>
@@ -67,17 +68,85 @@ export default {
     },
     isActive(link) {
       return this.activeLink === link;
+    },
+    scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        this.setActive(sectionId);
+      }
+    },
+    onScroll() {
+      const sections = document.querySelectorAll('section');
+      const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+      sections.forEach((section) => {
+        if (scrollPosition >= section.offsetTop && scrollPosition < section.offsetTop + section.offsetHeight) {
+          this.setActive(section.id);
+        }
+      });
     }
   },
   mounted() {
     console.log("Data loaded:", this.main); // Log data for verification
+
+    window.addEventListener('scroll', this.onScroll);
+  },
+  unmounted() { // Correcting the lifecycle hook
+    window.removeEventListener('scroll', this.onScroll);
   }
 };
 </script>
 
+
+
 <style lang="scss">
-#home {
-  overflow: hidden;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  scroll-behavior: smooth; 
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden; 
+}
+
+:root {
+  --desktop: 1200px;
+  --laptop: 1024px;
+  --tablet: 768px;
+  --phone: 480px;
+  --color-bg1: #f5ba19;
+  --color-bg2: #f12711;
+  --color1: 241, 39, 17;
+  --color2: 241, 39, 17;
+  --color3: 245, 186, 25;
+  --color4: 241, 39, 17;
+  --color5: 241, 39, 17;
+  --color-interactive: 241, 39, 17;
+  --circle-size: 80%;
+  --blending: hard-light;
+}
+
+html,
+body {
+  font-family: 'Dongle', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 #Logo {
@@ -148,5 +217,4 @@ export default {
 .navbar-toggler {
   z-index: 3;
 }
-
 </style>

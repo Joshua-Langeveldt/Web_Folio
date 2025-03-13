@@ -393,13 +393,19 @@ import data from "@/data/data.json"
   
     }
   
-     @media (max-width: 300px) {
+     @media (max-width: 360px) {
   
       .modal {
         left: 22rem;
       }
+
+      .section-header{
+        text-align: center;
+        font-size:2.4rem;
+      }
      }
   
+     
   
   </style>
   

@@ -70,7 +70,7 @@
       <a href="https://drive.google.com/uc?export=download&id=1eR4opf_Mh8h2LNUNjNpJUVlSUcLiiFge" id="download-link"><button class="btn">Download CV</button></a>
       <!-- <a href="https://joshua-langeveldt.github.io/learnify_certified/Jamin%20CV%202k24.pdf" download="Jamin_CV_2k24.pdf" class="btn btn-primary border-white">Download CV</a> -->
     </div>
-    <AppArrow />
+    <AppArrow nextSectionId="contact" />  
 </section>
   </template>
   
@@ -327,6 +327,40 @@
       opacity: 1;
     }
   }
+
+  @media (max-width: 400px) {
+
+    body {
+    height: auto;
+    display: block;
+  }
+
+  .timeline-container {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 100px 0px;
+    margin-bottom: 0rem;
+    margin-top: 0;
+  }
+
+  .timeline-point {
+    height: 100px; /* Smaller size for icons */
+    width: 100px;  /* Smaller size for icons */
+    flex-shrink: 0;
+    /* left: calc(-280px / 2); */
+    margin: 4rem 9rem; /* Adjusted margin */
+    position: relative;
+    background: none;
+    box-shadow: none;
+    left: -14rem !important;
+  }
+
+  .timeline-point i {
+    font-size: 1.5rem; /* Smaller icon size */
+    display: none;
+  }
+  }
   
   @media (max-width: 1024px) {
   body {
@@ -347,7 +381,7 @@
     height: 100px; /* Smaller size for icons */
     width: 100px;  /* Smaller size for icons */
     flex-shrink: 0;
-    left: calc(-200px / 2);
+    left: calc(-280px / 2);
     margin: 4rem 9rem; /* Adjusted margin */
     position: relative;
   }

@@ -50,7 +50,7 @@
         </div>
       </div>
     </div>
-    <AppArrow />
+    <AppArrow nextSectionId="education" />  
   </section>
 </template>
 
