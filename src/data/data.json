@@ -20,7 +20,7 @@
       "skills": "Skills",
       "portfolio": "Projects",
       "contact": "Contact",
-      "education": "My Education Journey",
+      "education": "Professional Development Journey",
       "certification": "Certifications and Achievements"
     }
   },
@@ -37,7 +37,7 @@
         },
 
         {"name": "Resume",
-        "value": "https://drive.google.com/uc?export=download&id=1eR4opf_Mh8h2LNUNjNpJUVlSUcLiiFge"
+        "value": "https://1drv.ms/b/c/5ad4b38bb8b1bd2d/EWkTtA33HgpFuwGXmMRBvlYBFSPnLVfmsMrIIIrcpWKQ4A?e=Jx328i"
         },
 
         {"name": "Email",
@@ -314,11 +314,6 @@
             "name": "linkedin",
             "url": "https://www.linkedin.com/in/jamin-langeveldt-04b304289",
             "faClass": "fab fa-linkedin"
-          },
-          {
-            "name": "instagram",
-            "url": "https://www.instagram.com/king_legendx/",
-            "faClass": "fab fa-instagram"
           }
         ]
       },

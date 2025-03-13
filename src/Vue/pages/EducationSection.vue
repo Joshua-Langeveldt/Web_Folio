@@ -67,7 +67,7 @@
           </div>
         </div>
       </div>
-      <a href="https://drive.google.com/uc?export=download&id=1eR4opf_Mh8h2LNUNjNpJUVlSUcLiiFge" id="download-link"><button class="btn">Download CV</button></a>
+      <a href="https://1drv.ms/b/c/5ad4b38bb8b1bd2d/EWkTtA33HgpFuwGXmMRBvlYBFSPnLVfmsMrIIIrcpWKQ4A?e=Jx328i" id="download-link"><button class="btn">Download CV</button></a>
       <!-- <a href="https://joshua-langeveldt.github.io/learnify_certified/Jamin%20CV%202k24.pdf" download="Jamin_CV_2k24.pdf" class="btn btn-primary border-white">Download CV</a> -->
     </div>
     <AppArrow nextSectionId="contact" />  
